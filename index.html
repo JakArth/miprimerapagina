@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Juan C</title>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1 id="title">My Website</h1>
+        </div>
+        <div class="nav">
+            <nav class="navbar">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#likeme">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#pie">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- IMAGEN -->
+
+    <main id="inicio" class="img">
+        <img src="img/paisaje.jpg" alt="">
+    </main>
+
+
+    <!-- TARJETAS -->
+    <div id="Tarjeta" class="Tarjetas">
+        <!-- NAV -->
+        <nav class="title">
+            <h2 id="likeme" class="color_acento">Lo que me gusta</h2>
+        </nav>
+        <main>
+            <div class="container">
+                <!-- tarjeta 1 -->
+                <div class="card">
+                    <figure>
+                        <img src="img/Videogames.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Juegos</h3>
+                        <p id="parrafo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam iure quae
+                            autem.
+                            Exercitationem
+                            tenetur saepe expedita debitis cupiditate distinctio ipsam magni vero sapiente repellendus
+                            eos,
+                            aliquid rerum quia aspernatur. Ab.</p>
+                        <a href="index.html">Leer más</a>
+                    </div>
+                </div>
+                <!-- tarjeta 2 -->
+                <div class="card">
+                    <figure>
+                        <img src="img/Films.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Películas</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam iure quae autem.
+                            Exercitationem
+                            tenetur saepe expedita debitis cupiditate distinctio ipsam magni vero sapiente repellendus
+                            eos,
+                            aliquid rerum quia aspernatur. Ab.</p>
+                        <a href="index.html">Leer más</a>
+                    </div>
+                </div>
+                <!-- tarjeta 3 -->
+                <div class="card">
+                    <figure>
+                        <img src="img/Books.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Lectura</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam iure quae autem.
+                            Exercitationem
+                            tenetur saepe expedita debitis cupiditate distinctio ipsam magni vero sapiente repellendus
+                            eos,
+                            aliquid rerum quia aspernatur. Ab.</p>
+                        <a href="index.html">Leer más</a>
+                    </div>
+                </div>
+                <!-- tarjeta 4 -->
+                <div class="card">
+                    <figure>
+                        <img src="img/music.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Música</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam iure quae autem.
+                            Exercitationem
+                            tenetur saepe expedita debitis cupiditate distinctio ipsam magni vero sapiente repellendus
+                            eos,
+                            aliquid rerum quia aspernatur. Ab.</p>
+                        <a href="index.html">Leer más</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <section id="contacto" class="form-header">
+        <h1 class="color_acento">Contacto</h1>
+        <p class="color_claro"><em>¡Esperamos tu consulta!</em></p>
+
+        <form id="form" action="" method="get" class="formulario">
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" />
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="example@email.com" />
+            </div>
+
+            <div class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <div class="form-row">
+                <button>Enviar</button>
+            </div>
+            <p class="color_acento" id="alerta"></p>
+        </form>
+    </section>
+
+    <div class="seccion">
+        <section>
+            <!-- REDES -->
+            <h2>Redes</h2>
+            <nav>
+                <ol class="color_claro">
+                    <li id="li1" class="color_enlace">
+                        <a class="color_claro" target="_blank" href="https://discord.com/channels/jak.art">Discord</a>
+                    </li>
+                    <li class="color_enlace">
+                        <a class="color_claro" target="_blank"
+                            href="https://www.linkedin.com/in/juan-camilo-ca%C3%B1on-599003256/">LinkedIn</a>
+                    </li>
+                    <li class="color_enlace">
+                        <a class="color_claro" target="_blank"
+                            href="https://lxp.egg.live/content/step/5wz0a489a3LyMP8Rp4gkQ7"><strong>Egg</strong></a>
+                    </li>
+                </ol>
+            </nav>
+        </section>
+    </div>
+    <!-- FOOTER -->
+
+    <footer id="pie" class="pie">
+        &copy; Página de Juan 2023
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

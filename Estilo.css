@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+body {
+    margin: 30px;
+    padding: 10PX;
+    /* background-image: url("img/videogame.jpg"); */
+    background-color: black;
+    /* background-size: auto; */
+    /* background-position: center; */
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* -----COLORES----- */
+
+.color_acento {
+    color: crimson;
+}
+
+.color_claro {
+    color: aquamarine;
+}
+
+.color_oscuro {
+    color: black;
+}
+
+.color_enlace :hover {
+    color: orangered;
+}
+
+/* -----Encabezado----- */
+.header {
+    background-color: #29294279;
+    margin-bottom: 10px;
+    width: 95%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: fixed; 
+    
+}
+
+
+.header h1 {
+    
+    /* display: inline-block; */
+    font-family: consolas, "Courier New", monospace;
+    font-size: 38px;
+    color: crimson;
+    font-weight: bold;
+    line-height: 40px;
+    
+}
+.header h1:hover {
+    color: cornflowerblue;
+}
+
+.logo{
+    margin: 5px;
+    /* border: 1px solid white; */
+    width: fit-content;
+
+}
+.nav {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: 5px;
+    font-family: consolas, "Courier New", monospace;
+    /* justify-content: right; */
+    /* float: right; */
+    
+}
+
+.list a {
+    color: white;
+    
+}
+
+.list a:hover {
+    color: cornflowerblue;
+}
+
+.list li{
+    display: inline-block;
+    margin: 10px;
+    line-height: 20px;
+    
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: crimson;
+    float: right;
+    line-height: 80px;
+    margin-right: 1px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+@media(max-width:768px){
+    .logo{
+        width: 43%;
+    }
+    .header h1{
+    font-size: 28px; 
+    }
+    .list li{
+    font-size: 10px; 
+    }
+    .nav ul{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    .header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: dimgrey;
+        text-align: center;
+
+        top: 100px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+
+    .list li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+
+    .list a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: darkgreen;
+    }
+
+}
+@media(min-width:769px){
+    .header{
+        width: 95%;
+    }
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: none;
+    }
+}
+
+/* -----Imagen----- */
+.img img{
+    width: 100%;
+    /* flex-wrap: wrap; */
+    
+
+}
+
+.img{
+    margin-bottom: 10px;
+    scroll-margin-top: 10ex;
+}
+
+
+/* -----Tarjetass----- */
+
+.Tarjetas{
+    margin-top: 10px;
+    border: 1px dashed bisque;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    
+    
+}
+.title h2{
+    scroll-margin-top: 8ex;
+}
+.title {
+    height: 30px;
+    text-align: center;
+    width: 100%;
+
+}
+.container {
+    width: 98%;
+    margin: 10px;
+    border: 0px solid blue;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    border: 1px solid white;
+    width: 100%;
+    
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: grey;
+    box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    /* display: flex; */
+    /* align-items: center; */
+    
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card .contenido {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: brown;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+}
+
+.card .contenido a:hover {
+    background: black;
+    color: white;
+}
+
+
+
+/* ------------- Encabezado Contacto ------------- */
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    /* background-color: #f6f7f8; */
+    /* border: 1px solid #d6d9dc; */
+    border-radius: 3px;
+
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px;
+
+    scroll-margin-top: 10ex;
+
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+.form-row button:active {
+    background-color: #2e31df;
+}
+
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+/* @media only screen and (min-width: 700px) {
+    .form-header {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+    }
+
+    .form-row button {
+        margin-left: 120px;
+    }
+} */
+
+/* -----Redes----- */
+.seccion {
+
+    padding: 0%;
+    font-size: 20px;
+    border: 1px dotted bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-align: center; */
+    
+}
+
+.seccion h2 {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    color: crimson;
+    font-family: Comic Sans, "Courier New", monospace;
+    
+
+    
+}
+
+.seccion ol {
+    margin-left: 1%;
+    list-style-type: circle;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.seccion li{
+    margin: 10px;
+    display: inline-block;
+    
+
+}
+
+.seccion ol li:hover{
+    color: orangered;
+}
+
+
+/* -----Footer----- */
+.pie {
+    background-color: #292942;
+    color: crimson;
+    border: 1px dashed brown;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: consolas, "Courier New", monospace;
+    clear: both;
+    scroll-margin-top: 10ex;
+
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form-header{
+        padding: 0%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+}
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+    }
+}
